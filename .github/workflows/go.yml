@@ -1,0 +1,57 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+#
+# Created: 6th July 2026
+# Updated: 6th July 2026
+#
+
+name: Go
+
+env:
+  VERBOSITY: 1
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+  pull_request:
+
+jobs:
+
+  build:
+    strategy:
+      fail-fast: false
+
+      matrix:
+        go-version:
+        - '1.26'
+        - '1.25'
+        - '1.24'
+        - '1.23'
+        - '1.22'
+        - '1.21'
+        os:
+        - macos-latest
+        - ubuntu-latest
+        - windows-latest
+
+    runs-on: ${{matrix.os}}
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: "Set up Go ${{matrix.go-version}}"
+      uses: actions/setup-go@v4
+      with:
+        go-version: '${{matrix.go-version}}'
+
+    - name: "Display Go version"
+      run: go version
+
+    - name: "Build all targets"
+      run: ./build.sh
+
+    - name: "Run all unit-tests"
+      run: ./run_all_unit_tests.sh --verbosity ${{env.VERBOSITY}}
