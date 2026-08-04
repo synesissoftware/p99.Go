@@ -5,7 +5,7 @@
 		"editor.defaultFormatter": "golang.go",
 		"editor.formatOnSave": true,
 		"editor.insertSpaces": false,
-		"editor.rulers": [ 60, 76, 100 ],
+		"editor.rulers": [60, 76, 100,],
 		"editor.tabSize": 2,
 	},
 	"cmake.configureOnOpen": false,
@@ -20,13 +20,13 @@
 	],
 	"go.formatTool": "goimports",
 	"go.lintFlags": [
-		"--fast"
+		"--fast",
 	],
 	"go.lintOnSave": "workspace",
 	"go.lintTool": "golangci-lint",
 	"go.useLanguageServer": true,
 	"gopls": {
+		"ui.completion.usePlaceholders": true,
 		"ui.semanticTokens": true,
-		"ui.completion.usePlaceholders": true
 	},
 }

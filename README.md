@@ -1,5 +1,7 @@
 # p99.Go <!-- omit in toc -->
 
+Low-cost generation of performance percentiles (p50, p90, p99, p99.9, etc.).
+
 ![Language](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![GitHub release](https://img.shields.io/github/v/release/synesissoftware/p99.Go.svg)](https://github.com/synesissoftware/p99.Go/releases/latest)
@@ -7,8 +9,6 @@
 [![Go](https://github.com/synesissoftware/p99.Go/actions/workflows/go.yml/badge.svg)](https://github.com/synesissoftware/p99.Go/actions/workflows/go.yml)
 [![Go Report Card](https://goreportcard.com/badge/github.com/synesissoftware/p99.Go)](https://goreportcard.com/report/github.com/synesissoftware/p99.Go)
 [![Go Reference](https://pkg.go.dev/badge/github.com/synesissoftware/p99.Go.svg)](https://pkg.go.dev/github.com/synesissoftware/p99.Go)
-
-Low-cost generation of performance percentiles (p50, p90, p99, p99.9, etc.).
 
 
 ## Table of Contents <!-- omit in toc -->
