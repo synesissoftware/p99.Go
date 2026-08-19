@@ -99,12 +99,19 @@ fi
 #
 go clean -cache -testcache
 
+LD_FLAGS=""
+if [ "$(uname -s)" = "Darwin" ]; then
+  # Older Go toolchains can produce Mach-O binaries without LC_UUID on newer macOS
+  # versions, triggering `dyld: missing LC_UUID load command ...` at test start.
+  LD_FLAGS="-ldflags=-linkmode=external"
+fi
+
 if [ $Verbosity -ge 2 ]; then
 
-  go test -a -count=1 -v $Packages
+  go test -a -count=1 $LD_FLAGS -v $Packages
 else
 
-  go test -a -count=1 $Packages
+  go test -a -count=1 $LD_FLAGS $Packages
 fi
 
 
