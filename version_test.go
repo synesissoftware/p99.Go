@@ -17,5 +17,5 @@ import (
 )
 
 func Test_VersionString(t *testing.T) {
-	require.Equal(t, "0.1.0-alpha1", p99.VersionString())
+	require.Equal(t, "0.1.0", p99.VersionString())
 }
