@@ -94,6 +94,11 @@ if [ $Verbosity -ge 2 ]; then
   echo "Running all ${ProjectName} unit-test packages"
 fi
 
+#
+# Mitigate rare macOS `dyld` aborts caused by corrupted cached `*.test` binaries.
+#
+go clean -cache -testcache
+
 if [ $Verbosity -ge 2 ]; then
 
   go test -v $Packages
