@@ -101,10 +101,10 @@ go clean -cache -testcache
 
 if [ $Verbosity -ge 2 ]; then
 
-  go test -v $Packages
+  go test -a -count=1 -v $Packages
 else
 
-  go test $Packages
+  go test -a -count=1 $Packages
 fi
 
 
