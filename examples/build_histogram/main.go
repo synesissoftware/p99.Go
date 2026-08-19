@@ -48,7 +48,7 @@ func main() {
 	histogram := p99.New()
 	rng := newSimpleRng(12_345)
 
-	for range tries {
+	for i := 0; i < tries; i++ {
 		delayUs := (rng.next() % 1_000) + 1
 		start := time.Now()
 		time.Sleep(time.Duration(delayUs) * time.Microsecond)
