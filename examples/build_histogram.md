@@ -1,4 +1,4 @@
-# p99.Go Example - **build_histogram**
+# p99.Go - Example - **build_histogram**
 
 ## Summary
 
