@@ -1,4 +1,4 @@
-# p99.Go Example - **version**
+# p99.Go - Example - **version**
 
 ## Summary
 

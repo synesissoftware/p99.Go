@@ -1,4 +1,4 @@
-# **p99.Go** Changes
+# p99.Go Changes <!-- omit in toc -->
 
 
 ## 0.1.0-alpha1 - 6th July 2026
