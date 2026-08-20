@@ -1,12 +1,15 @@
 # p99.Go - Example - **version**
 
+
 ## Summary
 
 Example illustrating how to obtain the library version string.
 
+
 ## Source
 
-See [examples/version/main.go](./examples/version/main.go).
+See [examples/version/main.go](./version/main.go).
+
 
 ## Execution
 
