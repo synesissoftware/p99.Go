@@ -4,7 +4,7 @@
 
 /*
  * Created: 6th July 2026
- * Updated: 6th July 2026
+ * Updated: 20th August 2026
  */
 
 package p99_test
@@ -16,6 +16,24 @@ import (
 	"github.com/synesissoftware/p99.Go"
 )
 
+const (
+	Expected_VersionMajor uint16 = 0
+	Expected_VersionMinor uint16 = 2
+	Expected_VersionPatch uint16 = 0
+	Expected_VersionAB    uint16 = 0xFFFF
+)
+
+func Test_Version_Elements(t *testing.T) {
+	require.Equal(t, Expected_VersionMajor, p99.VersionMajor)
+	require.Equal(t, Expected_VersionMinor, p99.VersionMinor)
+	require.Equal(t, Expected_VersionPatch, p99.VersionPatch)
+	require.Equal(t, Expected_VersionAB, p99.VersionAB)
+}
+
+func Test_Version(t *testing.T) {
+	require.Equal(t, uint64(0x0000_0002_0000_FFFF), p99.Version())
+}
+
 func Test_VersionString(t *testing.T) {
-	require.Equal(t, "0.1.0", p99.VersionString())
+	require.Equal(t, "0.2.0", p99.VersionString())
 }

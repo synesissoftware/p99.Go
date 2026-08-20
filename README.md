@@ -91,10 +91,9 @@ import "github.com/synesissoftware/p99.Go"
 |---|---|---|
 | `BucketCount` | `64` | Number of logarithmic buckets in a `Histogram` |
 | `VersionMajor` | `0` | Major version number |
-| `VersionMinor` | `1` | Minor version number |
+| `VersionMinor` | `2` | Minor version number |
 | `VersionPatch` | `0` | Patch version number |
-| `VersionAB` | `0x4001` | Pre-release marker (alpha 1) |
-| `Version` | composite | Composite version value |
+| `VersionAB` | `ver2go.Release` (`0xFFFF`) | Final-release αβ-designator |
 
 
 ### Functions
@@ -102,6 +101,7 @@ import "github.com/synesissoftware/p99.Go"
 | Function | Description |
 |---|---|
 | `New()` | Returns a zero-initialized histogram |
+| `Version()` | Returns the packed 64-bit library version |
 | `VersionString()` | Returns the string form of the library version |
 | `BucketIndex(timeInNs uint64) int` | Calculates the bucket index for a duration |
 | `BucketRange(index int) (bool, uint64, uint64)` | Returns the inclusive nanosecond range for a bucket |
