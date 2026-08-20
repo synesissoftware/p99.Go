@@ -7,7 +7,6 @@ Low-cost generation of performance percentiles (p50, p90, p99, p99.9, etc.).
 [![GitHub release](https://img.shields.io/github/v/release/synesissoftware/p99.Go.svg)](https://github.com/synesissoftware/p99.Go/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/synesissoftware/p99.Go)](https://github.com/synesissoftware/p99.Go/commits/master)
 [![Go](https://github.com/synesissoftware/p99.Go/actions/workflows/go.yml/badge.svg)](https://github.com/synesissoftware/p99.Go/actions/workflows/go.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/synesissoftware/p99.Go)](https://goreportcard.com/report/github.com/synesissoftware/p99.Go)
 [![Go Reference](https://pkg.go.dev/badge/github.com/synesissoftware/p99.Go.svg)](https://pkg.go.dev/github.com/synesissoftware/p99.Go)
 
 
@@ -92,10 +91,9 @@ import "github.com/synesissoftware/p99.Go"
 |---|---|---|
 | `BucketCount` | `64` | Number of logarithmic buckets in a `Histogram` |
 | `VersionMajor` | `0` | Major version number |
-| `VersionMinor` | `1` | Minor version number |
+| `VersionMinor` | `2` | Minor version number |
 | `VersionPatch` | `0` | Patch version number |
-| `VersionAB` | `0x4001` | Pre-release marker (alpha 1) |
-| `Version` | composite | Composite version value |
+| `VersionAB` | `ver2go.Release` (`0xFFFF`) | Final-release αβ-designator |
 
 
 ### Functions
@@ -103,6 +101,7 @@ import "github.com/synesissoftware/p99.Go"
 | Function | Description |
 |---|---|
 | `New()` | Returns a zero-initialized histogram |
+| `Version()` | Returns the packed 64-bit library version |
 | `VersionString()` | Returns the string form of the library version |
 | `BucketIndex(timeInNs uint64) int` | Calculates the bucket index for a duration |
 | `BucketRange(index int) (bool, uint64, uint64)` | Returns the inclusive nanosecond range for a bucket |
