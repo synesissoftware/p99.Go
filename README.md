@@ -119,10 +119,10 @@ A low-cost, zero-allocation, 64-bucket logarithmic histogram designed for record
 package main
 
 import (
+	"github.com/synesissoftware/p99.Go"
+
 	"fmt"
 	"time"
-
-	"github.com/synesissoftware/p99.Go"
 )
 
 func main() {

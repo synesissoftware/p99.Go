@@ -10,12 +10,13 @@
 package p99_test
 
 import (
+	"github.com/synesissoftware/p99.Go"
+
+	"github.com/stretchr/testify/require"
+
 	"math"
 	"testing"
 	"time"
-
-	"github.com/stretchr/testify/require"
-	"github.com/synesissoftware/p99.Go"
 )
 
 func Test_Histogram_String(t *testing.T) {

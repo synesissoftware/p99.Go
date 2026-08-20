@@ -11,12 +11,12 @@
 package main
 
 import (
+	"github.com/synesissoftware/p99.Go"
+
 	"fmt"
 	"os"
 	"strconv"
 	"time"
-
-	"github.com/synesissoftware/p99.Go"
 )
 
 type simpleRng struct {

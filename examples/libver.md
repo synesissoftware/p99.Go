@@ -1,15 +1,21 @@
 # p99.Go - Example - **libver**
 
+
 ## Summary
-Displays the **p99.Go** library version and terminates (also prints the **ver2go** version used for version formatting).
+
+Displays the **p99.Go** library version and terminates.
+
 
 ## Source
-See [examples/libver/main.go](./examples/libver/main.go).
+
+See [examples/libver/main.go](./libver/main.go).
+
 
 ## Execution
+
 ```bash
 go run ./examples/libver
 ```
 
-<!-- ########################### end of file ########################### -->
 
+<!-- ########################### end of file ########################### -->
