@@ -10,10 +10,11 @@
 package p99_test
 
 import (
-	"testing"
+	"github.com/synesissoftware/p99.Go"
 
 	"github.com/stretchr/testify/require"
-	"github.com/synesissoftware/p99.Go"
+
+	"testing"
 )
 
 const (

@@ -10,9 +10,9 @@
 package p99_test
 
 import (
-	"testing"
-
 	"github.com/synesissoftware/p99.Go"
+
+	"testing"
 )
 
 func buildSequentialHistogram() *p99.Histogram {

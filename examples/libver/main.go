@@ -9,10 +9,10 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/synesissoftware/p99.Go"
 	ver2go "github.com/synesissoftware/ver2go"
+
+	"fmt"
 )
 
 func main() {
