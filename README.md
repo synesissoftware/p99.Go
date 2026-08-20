@@ -7,7 +7,6 @@ Low-cost generation of performance percentiles (p50, p90, p99, p99.9, etc.).
 [![GitHub release](https://img.shields.io/github/v/release/synesissoftware/p99.Go.svg)](https://github.com/synesissoftware/p99.Go/releases/latest)
 [![Last Commit](https://img.shields.io/github/last-commit/synesissoftware/p99.Go)](https://github.com/synesissoftware/p99.Go/commits/master)
 [![Go](https://github.com/synesissoftware/p99.Go/actions/workflows/go.yml/badge.svg)](https://github.com/synesissoftware/p99.Go/actions/workflows/go.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/synesissoftware/p99.Go)](https://goreportcard.com/report/github.com/synesissoftware/p99.Go)
 [![Go Reference](https://pkg.go.dev/badge/github.com/synesissoftware/p99.Go.svg)](https://pkg.go.dev/github.com/synesissoftware/p99.Go)
 
 
